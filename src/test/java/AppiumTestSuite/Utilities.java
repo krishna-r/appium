@@ -26,10 +26,10 @@ public class Utilities {
     @BeforeClass
     public void Startup() throws URISyntaxException, MalformedURLException {
         String AppiumServerIP="127.0.0.1";
-        int AppiumServerPort=4723;
+        int AppiumServerPort=4764;
         String AppiumServerURL="http://"+AppiumServerIP+":"+AppiumServerPort;
         String AndroidDeviceName="Pixel";
-        String AndroidAppName="E:\\appium\\AppiumAutomation\\src\\test\\java\\resources\\ApiDemos-debug.apk";
+        String AndroidAppName="E:\\appium\\AppiumAutomation\\src\\test\\java\\resources\\General-Store.apk";
         String appiumNodeModule="C:\\Users\\krishna\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js";
 
         service = new AppiumServiceBuilder().withAppiumJS(new File(appiumNodeModule)).withIPAddress(AppiumServerIP).usingPort(AppiumServerPort).build();
