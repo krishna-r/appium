@@ -26,7 +26,7 @@ public class Utilities {
     @BeforeClass
     public void Startup() throws URISyntaxException, MalformedURLException {
         String AppiumServerIP="127.0.0.1";
-        int AppiumServerPort=4764;
+        int AppiumServerPort=4723;
         String AppiumServerURL="http://"+AppiumServerIP+":"+AppiumServerPort;
         String AndroidDeviceName="Pixel";
         String AndroidAppName="E:\\appium\\AppiumAutomation\\src\\test\\java\\resources\\General-Store.apk";
@@ -41,8 +41,8 @@ public class Utilities {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // global wait
     }
     @AfterClass
-    public void shutdown() throws InterruptedException {
-        Thread.sleep(10000);
+    public void shutdownDriverAndAppiumServer() throws InterruptedException {
+        Thread.sleep(5000);
         driver.quit();
         service.stop();
     }
