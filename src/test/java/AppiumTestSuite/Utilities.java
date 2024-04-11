@@ -37,6 +37,7 @@ public class Utilities {
         UiAutomator2Options options=new UiAutomator2Options();
         options.setDeviceName(AndroidDeviceName);
         options.setApp(AndroidAppName);
+        options.setChromedriverExecutable("C:\\Users\\krishna\\Downloads\\chromedriver.exe");
         driver=new AndroidDriver(new URI(AppiumServerURL).toURL(),options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // global wait
     }
