@@ -49,8 +49,8 @@ public class iOSUtilities{
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
     @AfterClass
-    public void shutdownDriverAndAppiumServer() throws InterruptedException {
-        Thread.sleep(5000);
+    public void shutdownDriverAndAppiumServer() {
+        driver.terminateApp("com.example.apple-samplecode.UICatalog");
         driver.quit();
         service.stop();
     }

@@ -1,0 +1,7 @@
+{
+  "appium:app": "//Users//krishna//Desktop//Workstation//UIKitCatalog.app",
+  "appium:automationName": "XCUITest",
+  "appium:deviceName": "iPhone 15",
+  "appium:platformName": "IOS",
+  "appium:platformVersion": "17.4"
+}
