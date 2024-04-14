@@ -43,7 +43,7 @@ public class iOSUtilities{
         options.setPlatformVersion("17.4");
         options.setApp("//Users//krishna//Desktop//Workstation//UIKitCatalog.app");
         options.setNoReset(true);
-        options.setWdaLaunchTimeout(Duration.ofSeconds(10));
+        options.setWdaLaunchTimeout(Duration.ofSeconds(60));
         options.setAutomationName("XCUITest");
         driver = new IOSDriver(new URI(AppiumServerURL).toURL(),options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
